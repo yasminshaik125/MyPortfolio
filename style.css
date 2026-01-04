@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #f7f8fc, #eef1ff);
+    text-align: center;
+}
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: #6a5acd;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+header {
+    background: linear-gradient(135deg, #6a5acd, #8a7cfb);
+    color: white;
+    padding: 50px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+header h1 {
+    background: linear-gradient(45deg, #fff, #e0dcff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+.skills span {
+    display: inline-block;
+    background: #eef1ff;
+    color: #6a5acd;
+    padding: 8px 15px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 14px;
+    
+}
+
+button {
+    padding: 12px 25px;
+    background: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #5848c2;
+    transform: scale(1.05);
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 16px;
+    margin: 6px 0;
+}
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    color: #666;
+    font-size: 14px;
+}
+#darkModeBtn {
+    position: fixed;        /* THIS moves it freely */
+    top: 20px;              /* distance from top */
+    right: 20px;            /* distance from right */
+    background: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;          /* stays above everything */
+}
+
+/* Hover effect */
+#darkModeBtn:hover {
+    transform: scale(1.1);
+}
+
+/* Dark mode styles */
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark section {
+    background-color: #1e1e1e;
+}
+
+.dark nav {
+    background-color: #1e1e1e;
+}
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+
+.dark section {
+    background: #1e1e1e;
+}
+
+.dark nav {
+    background: #1e1e1e;
+}
+section {
+    position: relative;
+}
+
+section::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #6a5acd;
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+nav a:hover {
+    color: #5848c2;
+}
+section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+
