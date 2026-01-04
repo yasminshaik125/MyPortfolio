@@ -87,9 +87,9 @@ footer {
     font-size: 14px;
 }
 #darkModeBtn {
-    position: fixed;        /* THIS moves it freely */
-    top: 20px;              /* distance from top */
-    right: 20px;            /* distance from right */
+    position: fixed;        
+    top: 20px;              
+    right: 20px;            
     background: #6a5acd;
     color: white;
     border: none;
@@ -98,7 +98,7 @@ footer {
     cursor: pointer;
     font-size: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    z-index: 1000;          /* stays above everything */
+    z-index: 1000;         
 }
 
 /* Hover effect */
@@ -172,5 +172,6 @@ section:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
+
 
 
